@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Nosifer");
+@import url("https://fonts.googleapis.com/css?family=Creepster");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background {
+  background: url("img/tHOC9EG.png") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  gap: 24px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+h1 {
+  font-family: "Creepster", cursive;
+  color: white;
+}
+
+.terms {
+  color: white;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+}
+
+.input-field {
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  padding-bottom: 12px;
+}
+
+.input-field::placeholder {
+  color: white;
+  opacity: 1; /* Optional, to ensure full color visibility */
+  font-family: "Creepster", cursive;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #d3510b; /* Halloween orange */
+  color: #000;
+  font-weight: 700;
+  font-family: "Creepster", cursive;
+}
+.creepy-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.web {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(""); /* Replace with your spider web image */
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* So it doesn't interfere with button click */
+}
+
+.creepy-button:hover .web {
+  opacity: 0.7;
+}
